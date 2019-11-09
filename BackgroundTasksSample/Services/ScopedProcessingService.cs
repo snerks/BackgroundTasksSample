@@ -2,7 +2,6 @@ using Microsoft.Extensions.Logging;
 
 namespace BackgroundTasksSample.Services
 {
-    #region snippet1
     internal interface IScopedProcessingService
     {
         void DoWork();
@@ -22,5 +21,4 @@ namespace BackgroundTasksSample.Services
             _logger.LogInformation("Scoped Processing Service is working.");
         }
     }
-    #endregion
 }

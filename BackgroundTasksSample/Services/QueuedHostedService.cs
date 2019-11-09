@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 
 namespace BackgroundTasksSample.Services
 {
-    #region snippet1
     public class QueuedHostedService : BackgroundService
     {
         private readonly ILogger _logger;
@@ -43,5 +42,4 @@ namespace BackgroundTasksSample.Services
             _logger.LogInformation("Queued Hosted Service is stopping.");
         }
     }
-    #endregion
 }

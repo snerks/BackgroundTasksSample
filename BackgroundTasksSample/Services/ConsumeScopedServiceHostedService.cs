@@ -7,7 +7,6 @@ using Microsoft.Extensions.Logging;
 
 namespace BackgroundTasksSample.Services
 {
-    #region snippet1
     internal class ConsumeScopedServiceHostedService : IHostedService
     {
         private readonly ILogger _logger;
@@ -54,5 +53,4 @@ namespace BackgroundTasksSample.Services
             return Task.CompletedTask;
         }
     }
-    #endregion
 }

@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 namespace BackgroundTasksSample.Services
 {
-    #region snippet1
     public interface IBackgroundTaskQueue
     {
         void QueueBackgroundWorkItem(Func<CancellationToken, Task> workItem);
@@ -41,5 +40,4 @@ namespace BackgroundTasksSample.Services
             return workItem;
         }
     }
-    #endregion
 }

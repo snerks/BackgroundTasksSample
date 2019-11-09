@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 
 namespace BackgroundTasksSample.Services
 {
-    #region snippet1
     internal class TimedHostedService : IHostedService, IDisposable
     {
         private readonly ILogger _logger;
@@ -46,5 +45,4 @@ namespace BackgroundTasksSample.Services
             _timer?.Dispose();
         }
     }
-    #endregion
 }

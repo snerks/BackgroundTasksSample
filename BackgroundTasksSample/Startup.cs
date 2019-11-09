@@ -23,19 +23,13 @@ namespace BackgroundTasksSample
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            #region snippet1
             services.AddHostedService<TimedHostedService>();
-            #endregion
 
-            #region snippet2
             services.AddHostedService<ConsumeScopedServiceHostedService>();
             services.AddScoped<IScopedProcessingService, ScopedProcessingService>();
-            #endregion
 
-            #region snippet3
             services.AddHostedService<QueuedHostedService>();
             services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
-            #endregion
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
